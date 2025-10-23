@@ -1,4 +1,4 @@
-# 💹 Telegram Market Tracker Bot
+# 💹 Telegram MEXC Token Tracker Bot
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-Active-blue?logo=telegram)](https://t.me/)
