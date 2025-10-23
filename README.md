@@ -2,28 +2,28 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-Active-blue?logo=telegram)](https://t.me/)
-[![License](https://img.shields.io/github/license/MC769/MarketTrackerBot)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MC769/MarketTrackerBot?style=social)](https://github.com/MC769/MarketTrackerBot/stargazers)
-[![Issues](https://img.shields.io/github/issues/MC769/MarketTrackerBot)](https://github.com/MC769/MarketTrackerBot/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/MC769/MarketTrackerBot?color=green)](https://github.com/MC769/MarketTrackerBot/commits/main)
+[![License](https://img.shields.io/github/license/MC769/MEXC-Token-Tracker-Bot)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/MC769/MEXC-Token-Tracker-Bot?style=social)](https://github.com/MC769/MarketTrackerBot/stargazers)
+[![Issues](https://img.shields.io/github/issues/MC769/MEXC-Token-Tracker-Bot)](https://github.com/MC769/MarketTrackerBot/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/MC769/MEXC-Token-Tracker-Bot?color=green)](https://github.com/MC769/MarketTrackerBot/commits/main)
 
 ---
 
 ## 🧠 Overview
 
-**MarketTrackerBot** is a lightweight Telegram bot that provides **real-time price updates** for any token listed on **MEXC Exchange**.  
+**MEXC-Token-Tracker-Bot** is a lightweight Telegram bot that provides **real-time price updates** for any token listed on **MEXC Exchange**.  
 Simply send the token symbol (like `BTC`) in chat — and the bot responds with live market data, 24-hour change, and volume, along with quick access to the chart.
 
 ---
 
 ## ✨ Features
 
-- 💰 **Live Price Data** — Fetches the latest price from [MEXC API](https://mexc.com/)
-- 📊 **24H Stats** — Shows price change %, trading volume, and performance since listing
-- 🔄 **One-Click Refresh** — Instantly updates market data
-- 📈 **Chart Button** — Direct link to the MEXC chart for your token
-- 🌐 **Environment Variables Support** — Easy configuration using `.env`
-- 🧩 **Clean Codebase** — Structured with async `python-telegram-bot v20+`
+- 💰 **Live Price Data** - Fetches the latest price from [MEXC API](https://mexc.com/)
+- 📊 **24H Stats** - Shows price change %, trading volume, and performance since listing
+- 🔄 **One-Click Refresh** - Instantly updates market data
+- 📈 **Chart Button** - Direct link to the MEXC chart for your token
+- 🌐 **Environment Variables Support** - Easy configuration using `.env`
+- 🧩 **Clean Codebase** - Structured with async `python-telegram-bot v20+`
 
 ---
 
