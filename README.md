@@ -137,8 +137,8 @@ nohup python3 main.py &
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License.
+Feel free to use, modify, and share.
 ---
 
 ⭐ **If you like this project, consider giving it a star!**  
