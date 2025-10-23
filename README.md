@@ -1,6 +1,6 @@
 
 ```markdown
-# 🚀 Telegram Crypto Price Bot (MEXC API)
+### 🚀 Telegram Crypto Price Bot (MEXC API)
 
 This project is a lightweight **Telegram bot** that allows users to check real-time cryptocurrency prices, 24-hour change, trading volume, and performance since listing — powered by the **MEXC Exchange API**.
 
