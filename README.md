@@ -1,167 +1,144 @@
+# 💹 Telegram Market Tracker Bot
 
-```markdown
-### 🚀 Telegram Crypto Price Bot (MEXC API)
-
-This project is a lightweight **Telegram bot** that allows users to check real-time cryptocurrency prices, 24-hour change, trading volume, and performance since listing — powered by the **MEXC Exchange API**.
-
-It uses:
-✅ Python  
-✅ `python-telegram-bot` v20+  
-✅ Real-time REST API requests  
-✅ Environment variables for secure configuration (`.env` file)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-Active-blue?logo=telegram)](https://t.me/)
+[![License](https://img.shields.io/github/license/MC769/MarketTrackerBot)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/MC769/MarketTrackerBot?style=social)](https://github.com/MC769/MarketTrackerBot/stargazers)
+[![Issues](https://img.shields.io/github/issues/MC769/MarketTrackerBot)](https://github.com/MC769/MarketTrackerBot/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/MC769/MarketTrackerBot?color=green)](https://github.com/MC769/MarketTrackerBot/commits/main)
 
 ---
 
-## 🧠 Features
+## 🧠 Overview
 
-✔ Get live crypto price using simple text command (e.g., typing `BTC`)  
-✔ Displays:
-- ✅ Current Price  
-- ✅ 24H Price Change (%) with 📈/📉 emoji  
-- ✅ Performance since listing  
-- ✅ 24H Trading Volume  
-- ✅ Last Updated Time  
-✔ Inline buttons for:
-- ✅ 📈 View Chart (opens MEXC price page)  
-- ✅ 🔄 Refresh data in real-time  
-✔ `.env` file support (no hardcoded API keys or token symbols)
+**MarketTrackerBot** is a lightweight Telegram bot that provides **real-time price updates** for any token listed on **MEXC Exchange**.  
+Simply send the token symbol (like `BTC`) in chat — and the bot responds with live market data, 24-hour change, and volume, along with quick access to the chart.
 
 ---
 
-## 📁 Project Structure
+## ✨ Features
 
-```
-
-📂 CryptoTelegramBot
-├── bot.py               # Main bot script
-├── .env                 # Environment variables (not uploaded to GitHub)
-├── README.md            # Documentation
-├── requirements.txt     # Dependencies
-
-```
+- 💰 **Live Price Data** — Fetches the latest price from [MEXC API](https://mexc.com/)
+- 📊 **24H Stats** — Shows price change %, trading volume, and performance since listing
+- 🔄 **One-Click Refresh** — Instantly updates market data
+- 📈 **Chart Button** — Direct link to the MEXC chart for your token
+- 🌐 **Environment Variables Support** — Easy configuration using `.env`
+- 🧩 **Clean Codebase** — Structured with async `python-telegram-bot v20+`
 
 ---
 
-## ⚙️ Environment Setup (.env File)
-
-Create a file named `.env` in your project directory and add:
-
-```
-
-BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-SYMBOL=BTC
-
-````
-
-> 📌 Example: If `SYMBOL=BTC`, then the bot listens to the command `btc` in Telegram.
-
----
-
-## 🛠 Installation & Usage
+## 🛠️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-````
+git clone https://github.com/MC769/MarketTrackerBot.git
+cd MarketTrackerBot
+```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # For Linux/Mac
+venv\Scripts\activate     # For Windows
+```
 
+### 3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Create `.env` File (Important)
-
-```bash
+### 4️⃣ Create `.env` File
+Create a `.env` file in your root directory with:
+```env
 BOT_TOKEN=your_telegram_bot_token
 SYMBOL=BTC
 ```
 
-### 4️⃣ Run the Bot
-
+### 5️⃣ Run the Bot
 ```bash
-python bot.py
+python main.py
 ```
 
 ---
 
-## 💻 How to Use
+## 🧩 Example Command
 
-| Action                   | What to Do                                |
-| ------------------------ | ----------------------------------------- |
-| ✅ Get price              | Send the symbol (e.g., `btc`) to your bot |
-| 🔄 Refresh stats         | Click the **Refresh** button              |
-| 📈 Open full price chart | Click the **View Chart** button           |
+💬 **User:**  
+```
+BTC
+```
 
----
-
-## 📦 Example Output (in Telegram)
-
+🤖 **Bot Response:**
 ```
 💹 BTC/USDT Market Overview
 
-💰 Price: `62439.670000`
+💰 Price: `64000.123456`
 
-🟢 24H Change: `+2.30%`
-🔺 Since Listing: `+500000000.00%`
+🟢 24H Change: `+1.32%`
+🔺 Since Listing: `+6399900.00%`
 📊 Volume: `123456789.00`
 
-📅 Updated at: `2025-10-23 14:22 UTC`
-🧠 _Data by MEXC_
+📅 Updated at: `2025-10-23 10:00 UTC`
+🧠 Data by MEXC
 ```
+
+With inline buttons:  
+🔹 **📈 View Chart**  
+🔹 **🔄 Refresh**
 
 ---
 
-## 📚 Requirements (requirements.txt Example)
+## 🧰 Requirements
 
-```
+- Python **3.10+**
+- Libraries:
+  - `python-telegram-bot`
+  - `requests`
+  - `python-dotenv`
+
+---
+
+## 📦 Example `requirements.txt`
+```txt
 python-telegram-bot==20.7
-requests
-python-dotenv
+requests==2.31.0
+python-dotenv==1.0.1
 ```
 
 ---
 
-## 🧠 Future Improvements
+## 💡 Customization
 
-* 🔔 Add price alerts
-* 🧾 Add multi-token support (`/btc`, `/eth`, etc.)
-* 📊 Interactive inline charts
-* 🌐 Add support for other exchanges (Binance, Bybit)
+You can easily modify:
+- `listing_price` → set your token’s initial price  
+- `SYMBOL` → default coin symbol (from `.env`)  
+- `VIEW_CHART_URL` → link to any exchange or chart  
 
 ---
 
-## 🤝 Contributing
+## 🚀 Deployment (Optional)
 
-Pull requests are welcome!
+To run 24/7 on a server (e.g., Ubuntu VPS):
 
-1. Fork the repo
-2. Create a branch: `feature/new-feature`
-3. Commit & push
-4. Open a Pull Request ✅
+```bash
+sudo apt update && sudo apt install -y python3-pip
+pip install -r requirements.txt
+nohup python3 main.py &
+```
+
+---
+
+## 🧑‍💻 Author
+
+**Chiran ([@MC769](https://github.com/MC769))**  
+🚀 Building bots and automation tools for Web3, crypto, and beyond.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
-Feel free to use, modify, and share.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🌐 Connect With Me
-
-| Platform    | Link                                                                         |
-| ----------- | ---------------------------------------------------------------------------- |
-| 💼 LinkedIn | [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile) |
-| 🐙 GitHub   | [https://github.com/your-username](https://github.com/MC769)         |
-
----
-
-⭐ *If this project helped you, don't forget to star the repo on GitHub!*
-
-```
-
-Just tell me — I can do it in seconds. 🚀
-```
+⭐ **If you like this project, consider giving it a star!**  
